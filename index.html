@@ -1,0 +1,240 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kevin Hall - Django Web Developer</title>
+        <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,500,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<nav class="navbar navbar-custom transparent navbar-inverse navbar-fixed-top animated fadeInDown" role="navigation">
+		      <div class="container">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand site-logo" href="/home">Kevin Hall</a>
+		        </div>
+		    
+		       
+		        <div class="collapse navbar-collapse" id="navbar-collapse-3">
+		          <ul class="nav navbar-nav navbar-right">
+		            
+		            <!-- <li><a href="/sample">sample</a></li> -->
+		            <li><a href="https://github.com/kbolt"><i class="fa fa-github fa-2x"></i></a></li>
+		            <li><a href="https://gitlab.com/u/kbolt"><i class="fa fa-gitlab fa-2x"></i></a></li>
+		            <li><a href="https://twitter.com/mrpip_"><i class="fa fa-twitter fa-2x"></i></a></li>
+		            <li><a href="https://www.linkedin.com/in/kevin-hall-aa790b7"><i class="fa fa-linkedin fa-2x"></i></a></li>
+		            <li><a href="mailto:mr.hallkevin@gail.com?Subject=Hello%20Kevin"><i class="fa fa-envelope fa-2x"></i></a></li>
+		          </ul>
+		          <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
+		            <form class="navbar-form navbar-right" role="search">
+		              <div class="form-group">
+		                <input type="text" name="q" class="form-control" placeholder="Search" value="{{ request.GET.q }}" />
+		              </div>
+		              <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+		            </form>
+
+		          </div>
+		        </div><!-- /.navbar-collapse -->
+		      </div><!-- /.container -->
+		</nav><!-- /.navbar --> 
+
+		<section class="jumbo">
+			<div class="container center-banner">
+				<div class="row">
+				<div class="overlay">
+						<img src="img/crowd3.jpg" alt="">
+					</div>
+					
+					
+					<div class="col-md-12 banner-padding home-banner">
+						<!-- <h1>Lorem</h1> -->
+						<p>Hi, I'm Kevin and I'm a web developer. I think it's fun to build online tools that help to solve a problem or even just to entertain. It is something that I work at daily for fun and self-improvement and I like working with others that share the same views.</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>My <strong>Projects</strong></h1>
+				</div>
+			</div>
+				<div class="row">
+					<div class="col-md-3 list">
+						<div class="item">
+							<a href="http://www.movieremakes.co/" class="item-link">
+								<div class="logo">
+									<span class="helper"></span>
+									<i class="fa fa-leaf fa-4x" aria-hidden="true"></i>
+								</div>
+								<h3>MovieRemakes</h3>
+								<p>An online resource for info on the Remakes and Re-imaginings of films.</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 list">
+						<div class="item">
+							<a href="http://www.tfapi.co/" class="item-link">
+								<div class="logo">
+									<span class="helper"></span>
+									<i class="fa fa-leaf fa-4x" aria-hidden="true"></i>
+								</div>
+								<h3>TFapi</h3>
+								<p>A ReSTful API for the Transformers Universe for Generation 1.</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 list">
+						<div class="item">
+							<a href="http://www.gijoeapi.co/" class="item-link">
+								<div class="logo">
+									<span class="helper"></span>
+									<i class="fa fa-leaf fa-4x" aria-hidden="true"></i>
+								</div>
+								<h3>GIJoeapi</h3>
+								<p>A ReSTful API for G.I. Joe Real American Hero from Hasbro.</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 list">
+						<div class="item">
+							<a href="http://www.charactergen.co/" class="item-link">
+								<div class="logo">
+									<span class="helper"></span>
+									<i class="fa fa-leaf fa-4x" aria-hidden="true"></i>
+								</div>
+								<h3>CharacterGen</h3>
+								<p>A tool to help you with creating characters for your personal projects.</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="talents">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Technical <strong>Details</strong></h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 technicals">
+						<p>I build responsive webapps using current design practices combined with robust frameworks and, database software and toolkits. The projects listed above were built with <strong>Django</strong>, <strong>Bootstrap</strong>, <strong>JQuery</strong>, <strong>CSS</strong> and <strong>Postgresql</strong>.</p>
+						
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<h1>Get in <strong>Touch</strong></h1>
+						<div class="form-wrapper">
+        <form action="mailto:mr.hallkevin@gmail.com" method="get" enctype="text/plain">
+          <!-- inputs -->
+          <div class="form-group">
+            <label class="sr-only" for="name">Name</label>
+            <div class="input-group">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              </div>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="email">Email</label>
+            <div class="input-group">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              </div>
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="subject">Subject</label>
+            <div class="input-group">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              </div>
+              <input type="text" class="form-control" id="subject" placeholder="Subject">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="message">Message</label>
+            <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+          </div>
+
+          <!-- buttons -->
+          <div class="btn-group pull-right" role="group">
+            <button type="reset" class="btn btn-default">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Reset
+            </button>
+            <button type="submit" class="btn btn-primary submit">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Submit
+            </button>
+          </div>
+        </form>
+      </div>
+					</div>
+
+
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="https://github.com/kbolt"><i class="fa fa-github fa-5x"></i> <span>Github</span></a></li>
+							<li><a href="https://twitter.com/mrpip_"><i class="fa fa-twitter fa-5x"></i> <span>Twitter</span></a></li>
+							<li><a href="https://gitlab.com/u/kbolt"><i class="fa fa-gitlab fa-5x"></i> <span>Gitlab</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kevin-hall-aa790b7"><i class="fa fa-linkedin fa-5x"></i> <span>Gitlab</span></a></li>
+							<!-- <li><a href="mailto:mr.hallkevin@gail.com?Subject=Hello%20Kevin"><i class="fa fa-envelope fa-5x"></i> <span>Email</span></a></li> -->
+						</ul>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="container">
+				<div class="row c-info">
+						<div class="col-xs-12">
+							<p>Copyright © 2016, All Rights Reserved</p>
+						</div>
+					</div>
+			</div>
+		</section>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/static/tiny_mce/tiny_mce.js"></script>
+		<script src="js/navscroll.js"></script>
+		<script src="js/contactform.js"></script>
+	</body>
+</html>
